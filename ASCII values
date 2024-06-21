@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        char a;
+        Scanner scan=new Scanner(System.in);
+        a=scan.next().charAt(0);
+        if(a>64&&a<91)
+        {
+            System.out.println("Upper");
+        }
+        else if(a>96&&a<123)
+        {
+        System.out.println("Lower");
+    }
+    else if(a>='0'&&a<='9')
+    {
+        System.out.println("Number");
+    }
+else
+{
+System.out.println("Symbol");
+}
+    }
+}   
