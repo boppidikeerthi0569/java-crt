@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int weight,adult,child;
+        Scanner scan=new Scanner(System.in);
+        weight= scan.nextInt();
+        adult=scan.nextInt();
+        child=scan.nextInt();
+        int totalweight=(int)((adult*75)+(child*30));
+        if(totalweight>weight)
+        { 
+           System.out.println("Boat will drown");
+        }
+        else
+        {
+            System.out.println("Boat is stable");
+        }
+    
+    }
+}
